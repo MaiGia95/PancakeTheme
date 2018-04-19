@@ -1,0 +1,62 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Roboto Condensed, sans-serif; }
+
+header .promote {
+  background-color: #000;
+  height: 35;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff; }
+  @media screen and (max-width: 768px) {
+    header .promote {
+      display: none; } }
+
+header .navigation {
+  display: flex; }
+  header .navigation--item {
+    padding: 0 10px; }
+
+.luxbar-promote {
+  display: flex;
+  padding: 0px 20px;
+  justify-content: space-between; }
+  @media screen and (min-width: 768px) {
+    .luxbar-promote {
+      display: none; } }
+
+.luxbar-menu {
+  background-color: #fff;
+  height: 60px; }
+
+.luxbar-item {
+  align-items: center; }
+  .luxbar-item:hover {
+    background-color: #fff; }
+  .luxbar-item input {
+    height: 30px; }
+
+.luxbar-navigation {
+  justify-content: flex-start !important; }
+  .luxbar-navigation .cart {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto; }
+    @media screen and (max-width: 768px) {
+      .luxbar-navigation .cart {
+        margin-left: 20px !important; } }
+
+.luxbar__white {
+  background-color: #fff;
+  color: #000;
+  padding: 6px 0;
+  border-bottom: 1px solid #f1f1f1; }
+
+@media screen and (min-width: 768px) {
+  .luxbar-header {
+    margin-right: 0 !important; } }
+
+.luxbar-hamburger-doublespin span, .luxbar-hamburger-doublespin span:after, .luxbar-hamburger-doublespin span:before {
+  background-color: #000 !important; }
