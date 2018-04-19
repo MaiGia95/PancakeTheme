@@ -5,23 +5,54 @@ body
   font-family: $font1
 
 header
+  .wrap
+    padding: 0px 148px
   .promote
-    background-color: #000
-    height: 35
-    padding: 10px 20px
+    background-color: $background-header
+    height: 37px
     display: flex
     justify-content: space-between
-    color: #fff
+    align-items: center
+    color: $color-link
 
     @media screen and (max-width: 768px)
       display: none
-
+    &--left
+      &--link
+        color: $color-link
+        text-transform: uppercase
+        font-family: $font1
+        text-decoration: none
+        font-size: $ts-top-area
+        &:hover
+          color: $color-link-hover
+          cursor: pointer
+      &--span
+        color: $color-link
+        text-transform: uppercase
+        font-family: $font1
+        font-size: $ts-top-area
   .navigation
     display: flex
+    position: relative
 
     &--item
-      padding: 0 10px
-
+      padding: 0px 15px
+      text-transform: uppercase
+      font-family: $font1
+      font-size: $ts-top-area
+      border-right: 1px solid #4e4e4e
+      &:hover
+        color: $color-link-hover
+        cursor: pointer
+      &:last-child
+        position: absolute
+        top: 25px
+        right: 0px
+        background-color: $background-header
+        z-index: 5
+        border-top: 1px solid #4e4e4e
+        padding: 5px 5px
 .luxbar
   &-promote
     display: flex
@@ -40,7 +71,6 @@ header
       height: 30px
   &-navigation
     justify-content: flex-start !important
-
     .cart
       display: flex
       flex-direction: row
@@ -58,6 +88,5 @@ header
       margin-right: 0 !important
 
 .luxbar-hamburger-doublespin
-
   span, span:after, span:before
     background-color: #000 !important
