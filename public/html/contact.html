@@ -13,7 +13,7 @@
   <script src="./js/index.js"></script>
   <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
-  <title>Cart</title>
+  <title>Contact</title>
 </head>
 <body>
   <header>
@@ -47,9 +47,9 @@
            <label class="luxbar-hamburger luxbar-hamburger-doublespin"
            id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
          </li>
-         <li class="luxbar-item active"><a href="home">Home</a></li>
+         <li class="luxbar-item "><a href="home">Home</a></li>
          <li class="luxbar-item"><a href="product">shop</a></li>
-         <li class="luxbar-item"><a href="contact">contacts</a></li>
+         <li class="luxbar-item active"><a href="contact">contacts</a></li>
          <li class="luxbar-item"><a href="blog">blog</a></li>
          <li class="luxbar-item cart">
             <input class="input" placeholder="search..." />
@@ -79,141 +79,52 @@
    </div><!-- end luxbar -->
  </header><!-- end header -->
 
-<div class="cart container">
-  <div class="cart-header">
-    <div class="cart-header--left">
-        <h1>cart</h1>
-        <span>YOU'VE GOT 2 ITEMS IN THE CART</span>
+<!-- map -->
+<div class="map container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8241451153976!2d105.81869695006962!3d20.999685194078435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8f800a5a13%3A0xd5480726780fe5b9!2zVMO0IFbEqW5oIERp4buHbiwgS2jGsMahbmcgVHJ1bmcsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1524565463828" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
 
+<div class="contact container">
+  <div class="contact-form">
+    <div class="contact-form--title">
+        <h3>GET IN TOUCH</h3>
+        <span>WRITE US A LETTER</span>
     </div>
-    <div class="cart-header--right">
-        <div class="coupon-form">
-          <a href="" class="coupon-form--button">
-            <i><img src="./images/coupon.svg" alt=""></i>
-            <span>enter coupon<small>to get discounts</small></span>
-          </a>
-          <div class="coupon-form--input">
-            <i class="fa fa-times"></i>
-            <input type="text" placeholder="coupon code">
-            <button>apply coupon</button>
-          </div>
+    <form action="">
+        <div class="row">
+            <input type="text" name="name" placeholder="name">
+            <input type="text" name="subject" placeholder="subject">
         </div>
-    </div>
-  </div> <!-- end cart header -->
-  <table class="cart-product">
-      <thead>
-        <tr>
-          <th class="cart-product-remove"></th>
-          <th class="cart-product-info">Product</th>
-          <th class="cart-product-quantily">Quantily</th>
-          <th class="cart-product-subtotal">Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="cart-product--item">
-            <td  class="cart-product-remove"><i class="fa fa-times"></i></td>
-            <td  class="cart-product-info">
-              <div class="infomation">
-                <div class="left">
-                  <a href=""><img src="images/image1_2.jpg" alt=""></a>
-                </div>
-                <div class="right">
-                  <span class="name"><a href="">Leather Gloves</a></span>
-                  <span class="price"> $20.00</span>
-                </div>
+        <div class="row">
+          <input type="text" name="email" placeholder="email">
+        </div>
+        <div class="row">
+          <textarea name="message" rows="5" placeholder="Message"></textarea>
+        </div>
+        <button>Send message</button>
+    </form>
+  </div>
+  <div class="contact-info">
+      <div class="contact-info--title">
+        <h3>OUR ADDRESS</h3>
+        <span>WHERE ARE WE LOCATED</span>
+      </div>
+      <p>2954 Golden Estates, <br>Guys Store, Virginia,<br>24318-5414,<br>United states</p>
+      <p>(571) 400-1255 <br> info@aurumtheme.com</p>
+      <ul class="contact-info--social">
+          <li><a href=""><i class="fa fa-facebook"></i></a></li>
+          <li><a href=""><i class="fa fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa fa-youtube"></i></a></li>
+          <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+          <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+          <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+          <li><a href=""><i class="fa fa-snapchat-ghost"></i></a></li>
+      </ul>
+  </div>
 
-              </div>
-            </td>
-            <td  class="cart-product-quantily"><input type="number" value="1"></td>
-            <td  class="cart-product-subtotal"><span>$20.00</span></td>
-        </tr>
+</div>
 
-        <tr class="cart-product--item">
-            <td  class="cart-product-remove"><i class="fa fa-times"></i></td>
-            <td  class="cart-product-info">
-              <div class="infomation">
-                <div class="left">
-                  <a href=""><img src="images/image1_1.jpg" alt=""></a>
-                </div>
-                <div class="right">
-                  <span class="name"><a href="">Cheap Monday</a></span>
-                  <span class="price"> $20.00</span>
-                </div>
-
-              </div>
-            </td>
-            <td  class="cart-product-quantily"><input type="number" value="1"></td>
-            <td  class="cart-product-subtotal"><span>$20.00</span></td>
-        </tr>
-      </tbody>
-  </table> <!-- end cart-product -->
-  <div class="cart-check">
-    <div class="cart-check--floatright">
-        <div class="cross-sell">
-         <h3 class="cross-sell--title">YOU MAY BE INTERESTED IN…</h3>
-          <div class="cross-sell--product">
-            <div class="cross-sell--item">
-              <div class="left">
-                <a href=""><img src="images/owl1_2.jpg" alt=""></a>
-                <div class="cross-sell--details">
-                  <h3><a href="">NIKE CROWL</a></h3>
-                  <span>$18.00</span>
-                </div>
-              </div>
-              <div class="right">
-                <button>add to cart</button>
-              </div>
-            </div> <!-- end item -->
-
-            <div class="cross-sell--item">
-              <div class="left">
-                <a href=""><img src="images/owl3_2.jpg" alt=""></a>
-                <div class="cross-sell--details">
-                  <h3><a href="">NIKE CROWL</a></h3>
-                  <span>$18.00</span>
-                </div>
-              </div>
-              <div class="right">
-                <button>add to cart</button>
-              </div>
-            </div> <!-- end item -->
-
-          </div>
-    </div> <!-- end cross-sell -->
-
-    <div class="cart-total">
-      <h2>cart totals</h2>
-      <table>
-          <tbody>
-            <tr>
-              <th>SUBTOTAL</th>
-              <td>$40.00</td>
-            </tr>
-            <tr>
-              <th>SHIPPING</th>
-              <td>FLAT RATE</td>
-            </tr>
-            <tr>
-              <th>VAT</th>
-              <td>$8.00</td>
-            </tr>
-            <tr>
-              <th>TOTAL</th>
-              <td>$48.00</td>
-            </tr>
-          </tbody>
-      </table>
-    </div> <!-- end cart-totals -->
-    <div class="cart-button">
-      <button class="update">update cart</button>
-      <button class="checkout">checkout</button>
-    </div>
-    <div class="cart-shipping">
-      <button class="shipping">Calculate shipping</button>
-    </div>
-    </div> <!-- end col-right -->
-  </div> <!-- end cart-check -->
-</div> <!-- end cart -->
 
 <div class="logo container">
   <div class="logo-list owl-carousel owl-theme">

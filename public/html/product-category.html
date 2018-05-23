@@ -13,7 +13,7 @@
   <script src="./js/index.js"></script>
   <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
-  <title>Cart</title>
+  <title>Category</title>
 </head>
 <body>
   <header>
@@ -50,7 +50,7 @@
          <li class="luxbar-item active"><a href="home">Home</a></li>
          <li class="luxbar-item"><a href="product">shop</a></li>
          <li class="luxbar-item"><a href="contact">contacts</a></li>
-         <li class="luxbar-item"><a href="blog">blog</a></li>
+         <li class="luxbar-item"><a href="#">blog</a></li>
          <li class="luxbar-item cart">
             <input class="input" placeholder="search..." />
             <a href="#"><i class="fa fa-search luxbar-icon"></i></a>
@@ -78,142 +78,154 @@
      </div>
    </div><!-- end luxbar -->
  </header><!-- end header -->
-
-<div class="cart container">
-  <div class="cart-header">
-    <div class="cart-header--left">
-        <h1>cart</h1>
-        <span>YOU'VE GOT 2 ITEMS IN THE CART</span>
-
+ <div class="category container">
+    <div class="category-title">
+      <div class="category-title--name">
+        <h3>ACCESSORIES</h3>
+        <h4>SHOWING 1–16 OF 45 RESULTS</h4>
+      </div>
+      <div class="category-title--sort">
+          <form action="">
+            <select id="sort" name="sort">
+              <option value="dedault">dedault sorting</option>
+              <option value="popularity">Sort by popularity</option>
+              <option value="rating">Sort by average rating</option>
+              <option value="newness">Sort by newness</option>
+              <option value="price-lowto2">Sort by price: low to high</option>
+              <option value="price-2tolow">Sort by price: high to low</option>
+            </select>
+          </form>
+      </div>
     </div>
-    <div class="cart-header--right">
-        <div class="coupon-form">
-          <a href="" class="coupon-form--button">
-            <i><img src="./images/coupon.svg" alt=""></i>
-            <span>enter coupon<small>to get discounts</small></span>
-          </a>
-          <div class="coupon-form--input">
-            <i class="fa fa-times"></i>
-            <input type="text" placeholder="coupon code">
-            <button>apply coupon</button>
+    <div class="category-list">
+      <div class="category-list--item">
+          <div class="above">
+            <img src="./images/owl1_1.jpg" alt="" class="current">
+            <img src="./images/owl1_2.jpg" alt="" class="change">
+            <i class="fa fa-heart"></i>
+            <div class="onsale"><span>sale!</span></div>
           </div>
+          <div class="info">
+            <div class="tag">
+              <a href="" class="name">pocket wactch</a>
+              <a href="" class="type">Accessories</a>
+              <span class="price">$16.00</span>
+            </div>
+            <div class="add">
+              <a href=""><i class="fa fa-plus"></i></a>
+            </div>
+          </div>
+        </div><!-- end category item -->
+
+    </div> <!-- end category list -->
+ </div> <!-- end category -->
+
+<div class="widget_product container">
+  <div class="widget_product-col">
+    <h3 class="widget_product-title">FEATURED</h3>
+    <ul class="widget_product-list">
+      <li>
+        <img src="/images/image1_1.jpg" alt="" class="widget_product-img">
+        <div class="widget_product-content">
+          <a href="" class="widget_product-link">BILLIONAIRE BOYS</a>
+          <span class="widget_product-price">$20.00</span>
         </div>
-    </div>
-  </div> <!-- end cart header -->
-  <table class="cart-product">
-      <thead>
-        <tr>
-          <th class="cart-product-remove"></th>
-          <th class="cart-product-info">Product</th>
-          <th class="cart-product-quantily">Quantily</th>
-          <th class="cart-product-subtotal">Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="cart-product--item">
-            <td  class="cart-product-remove"><i class="fa fa-times"></i></td>
-            <td  class="cart-product-info">
-              <div class="infomation">
-                <div class="left">
-                  <a href=""><img src="images/image1_2.jpg" alt=""></a>
-                </div>
-                <div class="right">
-                  <span class="name"><a href="">Leather Gloves</a></span>
-                  <span class="price"> $20.00</span>
-                </div>
-
-              </div>
-            </td>
-            <td  class="cart-product-quantily"><input type="number" value="1"></td>
-            <td  class="cart-product-subtotal"><span>$20.00</span></td>
-        </tr>
-
-        <tr class="cart-product--item">
-            <td  class="cart-product-remove"><i class="fa fa-times"></i></td>
-            <td  class="cart-product-info">
-              <div class="infomation">
-                <div class="left">
-                  <a href=""><img src="images/image1_1.jpg" alt=""></a>
-                </div>
-                <div class="right">
-                  <span class="name"><a href="">Cheap Monday</a></span>
-                  <span class="price"> $20.00</span>
-                </div>
-
-              </div>
-            </td>
-            <td  class="cart-product-quantily"><input type="number" value="1"></td>
-            <td  class="cart-product-subtotal"><span>$20.00</span></td>
-        </tr>
-      </tbody>
-  </table> <!-- end cart-product -->
-  <div class="cart-check">
-    <div class="cart-check--floatright">
-        <div class="cross-sell">
-         <h3 class="cross-sell--title">YOU MAY BE INTERESTED IN…</h3>
-          <div class="cross-sell--product">
-            <div class="cross-sell--item">
-              <div class="left">
-                <a href=""><img src="images/owl1_2.jpg" alt=""></a>
-                <div class="cross-sell--details">
-                  <h3><a href="">NIKE CROWL</a></h3>
-                  <span>$18.00</span>
-                </div>
-              </div>
-              <div class="right">
-                <button>add to cart</button>
-              </div>
-            </div> <!-- end item -->
-
-            <div class="cross-sell--item">
-              <div class="left">
-                <a href=""><img src="images/owl3_2.jpg" alt=""></a>
-                <div class="cross-sell--details">
-                  <h3><a href="">NIKE CROWL</a></h3>
-                  <span>$18.00</span>
-                </div>
-              </div>
-              <div class="right">
-                <button>add to cart</button>
-              </div>
-            </div> <!-- end item -->
-
-          </div>
-    </div> <!-- end cross-sell -->
-
-    <div class="cart-total">
-      <h2>cart totals</h2>
-      <table>
-          <tbody>
-            <tr>
-              <th>SUBTOTAL</th>
-              <td>$40.00</td>
-            </tr>
-            <tr>
-              <th>SHIPPING</th>
-              <td>FLAT RATE</td>
-            </tr>
-            <tr>
-              <th>VAT</th>
-              <td>$8.00</td>
-            </tr>
-            <tr>
-              <th>TOTAL</th>
-              <td>$48.00</td>
-            </tr>
-          </tbody>
-      </table>
-    </div> <!-- end cart-totals -->
-    <div class="cart-button">
-      <button class="update">update cart</button>
-      <button class="checkout">checkout</button>
-    </div>
-    <div class="cart-shipping">
-      <button class="shipping">Calculate shipping</button>
-    </div>
-    </div> <!-- end col-right -->
-  </div> <!-- end cart-check -->
-</div> <!-- end cart -->
+      </li>
+      <li>
+        <img src="/images/image1_2.jpg" alt="" class="widget_product-img">
+        <div class="widget_product-content">
+          <a href="" class="widget_product-link">collkids</a>
+          <span class="widget_product-price">$20.00</span>
+        </div>
+      </li>
+      <li>
+        <img src="/images/image1_3.jpg" alt="" class="widget_product-img">
+        <div class="widget_product-content">
+          <a href="" class="widget_product-link">dialog </a>
+          <span class="widget_product-price">$20.00</span>
+        </div>
+      </li>
+    </ul>
+  </div> <!-- end product-col -->
+  <div class="widget_product-col">
+    <h3 class="widget_product-title">New products</h3>
+    <ul class="widget_product-list">
+      <li>
+        <img src="/images/image2_1.jpg" alt="" class="widget_product-img">
+        <div class="widget_product-content">
+          <a href="" class="widget_product-link">butterfly</a>
+          <span class="widget_product-price">$20.00</span>
+        </div>
+      </li>
+      <li>
+        <img src="/images/image2_2.jpg" alt="" class="widget_product-img">
+        <div class="widget_product-content">
+          <a href="" class="widget_product-link">STONEDETAIL</a>
+          <span class="widget_product-price">$20.00</span>
+        </div>
+      </li>
+      <li>
+        <img src="/images/image2_3.jpg" alt="" class="widget_product-img">
+        <div class="widget_product-content">
+          <a href="" class="widget_product-link">festival stone</a>
+          <span class="widget_product-price">$20.00</span>
+        </div>
+      </li>
+    </ul>
+  </div> <!-- end product-col -->
+  <div class="widget_product-col">
+    <h3 class="widget_product-title">on-sale</h3>
+    <ul class="widget_product-list">
+      <li>
+        <img src="/images/image1_1.jpg" alt="" class="widget_product-img">
+        <div class="widget_product-content">
+          <a href="" class="widget_product-link">asap bag</a>
+          <span class="widget_product-price">$20.00</span>
+        </div>
+      </li>
+      <li>
+        <img src="/images/image2_1.jpg" alt="" class="widget_product-img">
+        <div class="widget_product-content">
+          <a href="" class="widget_product-link">bobble beanie</a>
+          <span class="widget_product-price">$20.00</span>
+        </div>
+      </li>
+      <li>
+        <img src="/images/image1_2.jpg" alt="" class="widget_product-img">
+        <div class="widget_product-content">
+          <a href="" class="widget_product-link">jumpsuit</a>
+          <span class="widget_product-price">$20.00</span>
+        </div>
+      </li>
+    </ul>
+  </div> <!-- end product-col -->
+  <div class="widget_product-col">
+    <h3 class="widget_product-title">top-rate</h3>
+    <ul class="widget_product-list">
+      <li>
+        <img src="/images/image2_1.jpg" alt="" class="widget_product-img">
+        <div class="widget_product-content">
+          <a href="" class="widget_product-link">leather one</a>
+          <span class="widget_product-price">$20.00</span>
+        </div>
+      </li>
+      <li>
+        <img src="/images/image2_3.jpg" alt="" class="widget_product-img">
+        <div class="widget_product-content">
+          <a href="" class="widget_product-link">paul smith</a>
+          <span class="widget_product-price">$20.00</span>
+        </div>
+      </li>
+      <li>
+        <img src="/images/image1_3.jpg" alt="" class="widget_product-img">
+        <div class="widget_product-content">
+          <a href="" class="widget_product-link">spitfire</a>
+          <span class="widget_product-price">$20.00</span>
+        </div>
+      </li>
+    </ul>
+  </div> <!-- end product-col -->
+</div><!-- end widget_product -->
 
 <div class="logo container">
   <div class="logo-list owl-carousel owl-theme">

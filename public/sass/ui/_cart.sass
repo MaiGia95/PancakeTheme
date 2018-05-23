@@ -1,0 +1,341 @@
+.cart
+  &-header
+    display: flex
+    justify-content: space-between
+    padding: 20px 0px
+    @media screen and (max-width: 619px)
+      flex-direction: column
+    &--left
+      flex: 1
+      h1
+        font-family: $font1
+        font-size: 32px
+        font-weight: 300
+        text-transform: uppercase
+        color: #222
+        margin: 0px
+      span
+        display: block
+        font-size: 16px
+        margin-top: 10px
+        color: #888
+        font-family: $font1
+        text-transform: uppercase
+        font-weight: 300
+    &--right
+      flex: 1
+      display: flex
+      justify-content: flex-end
+      align-content: center
+      align-items: center
+      @media screen and (max-width: 619px)
+        justify-content: flex-start
+        margin-top: 15px
+      .coupon-form
+        height: 40px
+        position: relative
+        &--button
+          display: flex
+          justify-content: flex-start
+          align-content: center
+          align-items: center
+          text-decoration: none
+          height: 40px
+          transition: 0.4s
+          i
+            width: 40px
+            height: 100%
+            margin-right: 10px
+            img
+              width: 100%
+              height: 100%
+
+          span
+            margin: 0px
+            font-family: $font1
+            font-size: 18px
+            display: block
+            text-transform: uppercase
+            color: #333
+            small
+              font-size: 13px
+              font-weight: 300
+              color:#888
+              display: block
+        &--input
+          display: flex
+          justify-content: center
+          align-items: center
+          align-content: center
+          position: absolute
+          top: 50%
+          right: 0px
+          z-index: 5
+          transform: translateY(-50%)
+          height: 40px
+          transition: 0.6s
+          opacity: 0
+          visibility: hidden
+          @media screen and (max-width: 619px)
+            left: 110px
+          i
+            color: red
+          &:hover
+            cursor: pointer
+
+          input
+            margin: 0px 5px
+            height: 30px
+            &::placeholder
+              text-transform: capitalize
+              font-family: $font1
+              font-size: 14px
+              font-weight: 300
+          button
+            padding: 5px 12px
+            display: block
+            width: 120px
+            height: 35px
+            background-color: #222
+            color: #fff
+            text-transform: capitalize
+            font-weight: 400
+            font-size: 14px
+            font-family: $font1
+            border: none
+            &:hover
+              cursor: pointer
+          &.show
+            opacity: 1
+            visibility: visible
+
+  &-product
+    font-family: $font1
+    text-transform: uppercase
+    font-weight: 300
+    width: 100%
+    border-collapse: collapse
+    thead
+      tr
+        th
+          color: #888
+          font-weight: 300
+          font-size: 14px
+
+    tr
+      th,td
+        padding: 15px 5px
+        border-bottom: 1px solid #EEE
+    &--item
+      &:hover .cart-product-remove i
+        opacity: 1
+        visibility: visible
+
+
+    &-remove
+      width: 0%
+      i
+        width: 25px
+        height: 25px
+        background-color: #222
+        display: block
+        border-radius: 50%
+        color: white
+        text-align: center
+        line-height: 25px
+        font-size: 12px
+        font-weight: 300
+        opacity: 0
+        visibility: hidden
+        transition: 0.4s
+        &:hover
+          cursor: pointer
+        @media screen and (max-width: 991px)
+          opacity: 1
+          visibility: visible
+
+    &-info
+      width: 70%
+      text-align: left
+      .infomation
+        display: flex
+        .left
+          width: 90px
+          margin-right: 10px
+          @media screen and (max-width: 767px)
+            width: 40px
+          .name
+            a
+              text-decoration: none
+              color: red
+          img
+            width: 100%
+            height: auto
+        .right
+          display: flex
+          flex-direction: column
+          align-content: center
+          justify-content: center
+          padding: 10px 0px
+          .name
+            margin-bottom: 10px
+            a
+              text-decoration: none
+              color: #222
+              font-size: 24px
+              text-transform: capitalize
+              font-weight: 300
+              @media screen and (max-width: 767px)
+                font-size: 14px
+
+          .price
+            color: #6f6f6f
+            font-size: 18px
+            font-weight: 300
+            @media screen and (max-width: 767px)
+                font-size: 10px
+    &-quantily
+      width: 5%
+      text-align: center
+      input
+        text-align: center
+        border: 1px solid #EEE
+        @media screen and (max-width: 767px)
+          width: 100px
+    &-subtotal
+      width: 25%
+      text-align: right
+
+  &-check
+    padding: 20px 0px
+    display: flex
+    justify-content: flex-end
+    &--floatright
+      width: 33.33%
+      @media screen and (max-width: 991px)
+        width: 100%
+      .cross-sell
+        h3
+          margin: 0px
+          font-size: 18px
+          font-family: $font1
+          text-transform: uppercase
+          font-weight: 300
+          color: #222
+        &--item
+          display: flex
+          justify-content: space-between
+          margin: 10px 0px
+          padding: 10px 0px
+          border-bottom: 1px solid #EEE
+          .left
+            display: flex
+            width: 200px
+            a
+              width: 40px
+              margin-right: 10px
+              img
+                width: 100%
+                height: auto
+            .cross-sell--details
+              display: flex
+              flex-direction: column
+              width: 200px
+              h3
+                font-weight: 400
+                a
+                  text-decoration: none
+                  color: #4d4d4d
+                  font-size: 15px
+
+              span
+                color: #333
+                font-size: 12px
+                font-weight: 400
+          .right
+            button
+              font-size: 12px
+              background-color: #222
+              padding: 6px 12px
+              color: #fff
+              text-transform: uppercase
+              font-family: $font1
+              &:hover
+                cursor: pointer
+  &-total
+    width: 100%
+    padding: 20px 0px
+    h2
+      margin: 0px
+      font-size: 18px
+      font-family: $font1
+      text-transform: uppercase
+      font-weight: 300
+      color: #222
+      padding-bottom: 10px
+    table
+      width: 100%
+      border-collapse: collapse;
+
+      tr
+        th,td
+          width: 50%
+          border-bottom: 1px solid #EEE
+          padding: 5px 0px
+          font-family: $font1
+        th
+          text-align: left
+          color: #888
+          font-weight: 300
+          font-size: 14px
+        td
+          text-align: right
+          font-size: 14px
+          font-weight: 300
+          color: #222
+
+  &-button
+    text-align: center
+    button
+      padding: 10px 16px
+      font-size: 18px
+      font-weight: 400
+      color: white
+      text-transform: capitalize
+      width: 40%
+      margin: 0px 5px
+      font-family: $font1
+      &.update
+        background-color: #7b599b
+        &:hover
+          background-color: #7A5B99
+          cursor: pointer
+
+      &.checkout
+        background-color: #222
+        &:hover
+          background-color: #2F2F2F
+          cursor: pointer
+  &-shipping
+    margin: 10px 0px
+    button
+      text-align: center
+      width: 100%
+      background-color: #EEE
+      padding: 10px 16px
+      font-size: 18px
+      font-family: $font1
+      font-weight: 400
+      &:hover
+        cursor: pointer
+
+
+
+
+
+
+
+
+
+
+

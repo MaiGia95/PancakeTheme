@@ -1,19 +1,22 @@
 @import "modules/_all"
+@import "ui/_all"
 
 body
   +reset
   font-family: $font1
 
 header
-  .wrap
-    padding: 0px 148px
   .promote
     background-color: $background-header
     height: 37px
-    display: flex
-    justify-content: space-between
-    align-items: center
     color: $color-link
+    width: 100%
+    .container
+      display: flex
+      justify-content: space-between
+      align-items: center
+      height: 37px
+
 
     @media screen and (max-width: 768px)
       display: none
@@ -34,7 +37,6 @@ header
         font-size: $ts-top-area
   .navigation
     display: flex
-    position: relative
 
     &--item
       padding: 0px 15px
@@ -45,48 +47,256 @@ header
       &:hover
         color: $color-link-hover
         cursor: pointer
-      &:last-child
-        position: absolute
-        top: 25px
-        right: 0px
-        background-color: $background-header
-        z-index: 5
-        border-top: 1px solid #4e4e4e
-        padding: 5px 5px
+
 .luxbar
-  &-promote
-    display: flex
-    padding: 0px 20px
-    justify-content: space-between
-    @media screen and (min-width: 768px)
-      display: none
   &-menu
-    background-color: #fff
-    height: 60px
+    position: absolute
+    z-index: 10
+    width: 100%
+    left: 0px
+    top: 0px
+  &-default
+    border-bottom: 1px solid #f2f2f2
+    height: 70px
+    box-shadow: none !important
+  &-brand
+    width: 100px
+    padding: 0px !important
+    & img
+      width: 100%
+      height: auto
+      @media screen and (max-width: 767px)
+        margin-left: 20px
   &-item
+    font-family: $font1
+    text-transform: uppercase
+    font-weight: 300
+    color: #333
+    padding-left: 30px
+    padding-right: 30px
+    a
+      padding-left: 0px !important
+      padding-right: 0px !important
+    &.active
+      a
+        position: relative
+        &:after
+          content: ""
+          position: absolute
+          bottom: 10px
+          left: 0px
+          height: 2px
+          width: 100%
+          background-color: #ad2f2f
+          @media screen and (max-width: 767px)
+            display: none
+
     &:hover
       background-color: #fff
     align-items: center
-    input
-      height: 30px
+
+
   &-navigation
+    padding: 0px !important
     justify-content: flex-start !important
     .cart
       display: flex
       flex-direction: row
       margin-left: auto
-      @media screen and (max-width: 768px)
-        margin-left: 20px !important
+      @media screen and (max-width: 767px)
+        margin-left: 0px !important
+      input
+        height: 25px
+        width: 150px
+        border: 1px solid #333
+        @media screen and (max-width: 767px)
+          width: 100%
+        @media screen and (min-width: 768px) and (max-width: 991px)
+          width: 100px
+        &::placeholder
+          font-family: $font1
+          color: #333
+          text-transform: capitalize
+          font-size: 13px
+          font-weight: 300
+          padding: 5px
+
+  &-icon
+    font-size: 25px
+    margin: 0px 10px
+    color: #000
+
 
   &__white
     background-color: #fff
     color: #000
-    padding: 6px 0
-    border-bottom: 1px solid #f1f1f1
+    padding: 6px 0 !important
+
   &-header
     @media screen and (min-width: 768px)
       margin-right: 0 !important
 
+  &-promote
+    display: flex
+    padding: 20px 0px
+    flex-direction: column
+    @media screen and (min-width: 768px)
+      display: none
+    .promote--left
+      display: flex
+      &--link
+        padding: 0px 10px !important
+      &--span
+        margin-left: 10px
+
+    .promote-right
+      padding: 20px 0px
+      .navigation
+        &--item
+          padding: 0px 10px !important
+          &:last-child
+            border: none
+
+
 .luxbar-hamburger-doublespin
   span, span:after, span:before
     background-color: #000 !important
+
+
+footer
+  background-color: $background-header
+  .footer
+    &-menu
+    &-list
+      display: flex
+      justify-content: space-between
+      padding: 40px 0px
+      width: 100%
+      @media (max-width: 767px)
+        flex-direction: column
+    &-col
+      display: flex
+      flex-direction: column
+
+      &:last-child
+        display: block
+        width: 15%
+        @media (max-width: 767px)
+          width: 100%
+        a
+          display: block
+          background-color: #3a3a3a
+          width: 20px
+          height: 20px
+          float: left
+          margin: 5px
+          text-align: center
+          position: relative
+          i
+            position: absolute;
+            top: 50%;
+            left: 50%
+            transform: translate(-50%, -50%)
+
+
+    &-brand
+      font-family: $font1
+      font-size: $ts-bottom-menu-title
+      color: #fff
+      font-weight: 300
+      text-transform: uppercase
+    &-link
+      font-family: $font1
+      font-size: $ts-bottom-link
+      color: #959595
+      font-weight: 300
+      text-transform: uppercase
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+        color: #fff
+
+    &-bottom
+      display: flex
+      justify-content: space-between
+      align-items: center
+      border-top: 1px solid #959595
+      padding: 20px 0px
+
+      @media (max-width: 1200px)
+        flex-direction: column
+      &--menu
+        span
+          color: #959595
+          font-family: $font1
+          font-size: 14px
+          font-weight: 300
+        ul
+          padding: 0px
+          display: flex
+          justify-content: center
+          align-items: center
+          flex-wrap: wrap
+          li
+            list-style: none
+            margin-right: 5px
+            &:last-child
+              a
+                border-right: none
+            &:first-child
+              a
+                padding-left: 0px
+            a
+              color: #959595
+              text-decoration: none
+              font-family: $font1
+              font-size: 12px
+              text-transform: capitalize
+              font-weight: 300
+              border-right: 1px solid #959595
+              padding: 0px 5px
+              &:hover
+                color: #fff
+
+      &--payment
+        @media screen and (max-width: 500px)
+          height: 100px
+        ul
+          display: flex
+          justify-content: center
+          align-items: center
+          height: 15px
+          flex-wrap: wrap
+
+          li
+            list-style: none
+            height: 20px
+            margin-right: 15px
+            a
+              img
+                height: 15px
+                width: auto
+                margin: 5px 0px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

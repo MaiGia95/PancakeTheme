@@ -14,13 +14,34 @@ server.use(bodyParser.urlencoded({ extended: true }))
 server.get("/product", (req, res) => {
   res.sendFile(__dirname + "/public/html/product.html")
 })
+server.get("/contact", (req, res) => {
+  res.sendFile(__dirname + "/public/html/contact.html")
+})
+server.get("/home", (req, res) => {
+  res.sendFile(__dirname + "/public/html/index.html")
+})
+server.get("/product-category", (req, res) => {
+  res.sendFile(__dirname + "/public/html/product-category.html")
+})
+server.get("/blog", (req, res) => {
+  res.sendFile(__dirname + "/public/html/blog.html")
+})
+server.get("/post", (req, res) => {
+  res.sendFile(__dirname + "/public/html/blog-post.html")
+})
 
 server.get("/cart", (req, res) => {
   res.sendFile(__dirname + "/public/html/cart.html")
 })
 
-server.get("/category", (req, res) => {
-  res.sendFile(__dirname + "/public/html/category.html")
+server.get("/product-detail", (req, res) => {
+  res.sendFile(__dirname + "/public/html/product-detail.html")
+})
+server.get("/login", (req, res) => {
+  res.sendFile(__dirname + "/public/html/login.html")
+})
+server.get("/register", (req, res) => {
+  res.sendFile(__dirname + "/public/html/register.html")
 })
 
 server.get("/", (req, res) => {

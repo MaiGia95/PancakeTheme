@@ -1,12 +1,13 @@
 
 @import "_color"
-@import "_responsive"
+@import "_animation"
+
 
 $font1: Roboto Condensed,sans-serif
 $ts-top-area: 12px
 $ts-top-menu: 16px
 $ts-carousel-s: 24px
-$s-carousel-l: 48px
+$ts-carousel-l: 48px
 $ts-button: 14px
 $ts-page-title: 28px
 $ts-page-title-s: 15px
@@ -24,3 +25,19 @@ $ts-bottom-area-s: 12px
 =reset()
   padding: 0px
   margin: 0px
+
+.container
+  margin-right: auto
+  margin-left: auto
+  width: 100%
+  box-sizing: border-box
+  @media (max-width: 480px)
+    padding: 0px 10px !important
+  @media (min-width: 576px)
+    max-width: 540px !important
+  @media (min-width: 768px)
+    max-width: 720px !important
+  @media (min-width: 992px)
+    max-width: 960px !important
+  @media (min-width: 1200px)
+    max-width: 1170px !important

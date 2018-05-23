@@ -13,7 +13,7 @@
   <script src="./js/index.js"></script>
   <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
-  <title>Shop</title>
+  <title>Home</title>
 </head>
 <body>
   <header>
@@ -47,8 +47,8 @@
            <label class="luxbar-hamburger luxbar-hamburger-doublespin"
            id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
          </li>
-         <li class="luxbar-item "><a href="home">Home</a></li>
-         <li class="luxbar-item active"><a href="product">shop</a></li>
+         <li class="luxbar-item active"><a href="home">Home</a></li>
+         <li class="luxbar-item"><a href="product">shop</a></li>
          <li class="luxbar-item"><a href="contact">contacts</a></li>
          <li class="luxbar-item"><a href="#">blog</a></li>
          <li class="luxbar-item cart">
@@ -78,27 +78,307 @@
      </div>
    </div><!-- end luxbar -->
  </header><!-- end header -->
- <div class="shop container">
-    <div class="shop-title">
-      <div class="shop-title--name">
-        <h3>shop</h3>
-        <h4>SHOWING 1–16 OF 45 RESULTS</h4>
+
+<div class="single-product container">
+  <div class="single-product--breadcrumb">
+      <ul>
+        <li><a href="">AURUM</a></li>
+        <li><a href="">PRODUCTS </a></li>
+        <li><a href="">ACCESSORIES</a></li>
+        <li><a href="">POCKET WATCH</a></li>
+      </ul>
+  </div><!--  end breadcrumb -->
+  <div class="single-product--detail">
+    <div class="single-product--images">
+      <div class="img-small">
+        <a href=""><img src="images/owl1_1.jpg" alt="" ></a>
+        <a href=""><img src="images/owl2_1.jpg" alt="" ></a>
+        <a href=""><img src="images/owl6_1.jpg" alt="" ></a>
+        <a href=""><img src="images/owl6_2.jpg" alt="" ></a>
+
+      </div> <!-- end image small -->
+      <div class="img-big">
+          <a href="" ><img src="images/owl1_1.jpg" alt="" ></a>
+          <a href=""><img src="images/owl2_1.jpg" alt="" ></a>
+          <a href="" ><img src="images/owl6_1.jpg" alt="" ></a>
+          <a href="" ><img src="images/owl6_2.jpg" alt="" ></a>
+      </div> <!-- end image big -->
+    </div> <!-- end singgle-product-images -->
+    <div class="single-product--summary summary ">
+      <h2 class="summary-title">POCKET WATCH</h2>
+      <div class>
+        <a href="" class="summary-terms">ACCESSORIES</a>
+        <a href="" class="summary-terms">Watch</a>
       </div>
-      <div class="shop-title--sort">
-          <form action="">
-            <select id="sort" name="sort">
-              <option value="dedault">dedault sorting</option>
-              <option value="popularity">Sort by popularity</option>
-              <option value="rating">Sort by average rating</option>
-              <option value="newness">Sort by newness</option>
-              <option value="price-lowto2">Sort by price: low to high</option>
-              <option value="price-2tolow">Sort by price: high to low</option>
-            </select>
-          </form>
+
+      <div class="summary-ratting">
+        <div class="summary-ratting--star">
+          <span><i class="fa fa-star ratted"></i></span>
+          <span><i class="fa fa-star ratted"></i></span>
+          <span><i class="fa fa-star ratted"></i></span>
+          <span><i class="fa fa-star ratted"></i></span>
+          <span><i class="fa fa-star "></i></span>
+        </div>
+        <div class="summary-ratting--reviews" >
+          <a id="reviews">(3 customer reviews)</a>
+        </div>
       </div>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <span class="summary-price">$16.00</span>
+        <form class="summary-quantily">
+
+          <button class="sub">-</button>
+          <input type="number" value="1" min="1"/>
+          <button class="add">+</button>
+          <button type="submit"><i class="fa fa-plus"></i>add to cart</button>
+        </form>
+        <button class="summary-wishlist"> <i class="fa fa-heart"></i>add to wishist</button>
+        <div class="summary-meta">
+          <span> PRODUCT ID:<strong>301</strong> </span>
+          <span> CATEGORY:<a href="">ACCESSORIES</a> <a href="">Watch</a></span>
+        </div>
+        <div class="summary-share">
+          <span>share with: </span>
+          <a href=""><i class="fa fa-facebook"></i></a>
+          <a href=""><i class="fa fa-twitter"></i></a>
+          <a href=""><i class="fa fa-google-plus"></i></a>
+          <a href=""><i class="fa fa-pinterest"></i></a>
+        </div>
+
     </div>
-    <div class="shop-list">
-      <div class="shop-list--item">
+  </div>
+
+</div> <!-- end single-product -->
+
+<div class="tabs container">
+  <ul class="tabs-button">
+      <li class="description active"><a href="">Description</a></button>
+      <li class="additional-information"><a href="">additional information</a></button>
+      <li class="reviews"><a href="">Reviews(3)</a></li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-description content active">
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    </div>
+    <div class="tabs-additional-information content">
+        <table>
+          <tbody>
+            <tr>
+              <th>FIT</th>
+              <td><a href="">SLIM-FIT</a></td>
+            </tr>
+            <tr>
+              <th>WASH</th>
+              <td><a href="">SMACHINE WASH</a></td>
+            </tr>
+            <tr>
+              <th>MATERIAL</th>
+              <td><a href="">60% COTTON, 40% POLYESTER</a></td>
+            </tr>
+          </tbody>
+        </table>
+    </div> <!-- end tabs-additional-information -->
+    <div class="tabs-reviews content " id="reviews">
+      <h3 class="tabs-reviews-title">3 REVIEWS FOR POCKET WATCH</h3>
+      <div class="comment-list">
+        <div class="review">
+          <div class="review-user_avatar">
+            <img src="images/avatar.png" alt="">
+          </div>
+          <div class="review-content">
+            <div class="review-content--header">
+              <div class="user">
+                <span class="user-name">BARRY PAF</span>
+                <span class="user-date">FEBRUARY 10, 2015</span>
+              </div>
+              <div class="ratting">
+                <span class="fa fa-star ratting-checked"></span>
+                <span class="fa fa-star ratting-checked"></span>
+                <span class="fa fa-star ratting-checked"></span>
+                <span class="fa fa-star ratting-checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="review-content--body">
+              <p>very good</p>
+            </div>
+          </div> <!-- end review content -->
+        </div> <!-- end review -->
+
+          <div class="review">
+          <div class="review-user_avatar">
+            <img src="images/avatar.png" alt="">
+          </div>
+          <div class="review-content">
+            <div class="review-content--header">
+              <div class="user">
+                <span class="user-name">BARRY PAF</span>
+                <span class="user-date">FEBRUARY 10, 2015</span>
+              </div>
+              <div class="ratting">
+                <span class="fa fa-star ratting-checked"></span>
+                <span class="fa fa-star ratting-checked"></span>
+                <span class="fa fa-star ratting-checked"></span>
+                <span class="fa fa-star ratting-checked"></span>
+                <span class="fa fa-star ratting-checked"></span>
+              </div>
+            </div>
+            <div class="review-content--body">
+              <p>awesome themes, i like this</p>
+            </div>
+
+          </div> <!-- end review content -->
+        </div> <!-- end review -->
+
+        <div class="review">
+          <div class="review-user_avatar">
+            <img src="images/avatar.png" alt="">
+          </div>
+          <div class="review-content">
+            <div class="review-content--header">
+              <div class="user">
+                <span class="user-name">BARRY PAF</span>
+                <span class="user-date">FEBRUARY 10, 2015</span>
+              </div>
+              <div class="ratting">
+                <span class="fa fa-star ratting-checked"></span>
+                <span class="fa fa-star ratting-checked"></span>
+                <span class="fa fa-star ratting-checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div class="review-content--body">
+              <p>cool</p>
+            </div>
+
+          </div> <!-- end review content -->
+        </div> <!-- end review -->
+        <div class="new_review">
+          <span class="new_review-title">ADD A REVIEW</span>
+          <div class="new_review-rating">
+            <small>your rating</small>
+            <div class="ratting">
+              <span class="fa fa-star "></span>
+              <span class="fa fa-star "></span>
+              <span class="fa fa-star "></span>
+              <span class="fa fa-star "></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+          <form action="" class="add-new-review">
+            <div class="new_review-content">
+              <textarea name="" id="" rows="10" placeholder="your review"></textarea>
+            </div>
+            <div class="new_review-info">
+              <input type="text" placeholder="name">
+              <input type="text" placeholder="email">
+            </div>
+            <button type="submit"> submit</button>
+          </form>
+        </div> <!-- end new_review -->
+      </div> <!-- end comment list -->
+    </div> <!-- end tab-reviews -->
+  </div> <!-- end tab content -->
+</div> <!-- end tabs -->
+
+
+<div class="upsell container">
+     <h3 class="upsell-title">
+
+        YOU MAY ALSO LIKE…
+
+    </h3>
+    <div class="upsell-list">
+      <div class="upsell-list--item">
+          <div class="above">
+            <img src="./images/image1.1.jpg" alt="" class="current">
+            <img src="./images/image1.2.jpg" alt="" class="change">
+            <i class="fa fa-heart"></i>
+            <div class="onsale"><span>sale!</span></div>
+          </div>
+          <div class="info">
+            <div class="tag">
+              <a href="" class="name">pocket wactch</a>
+              <a href="" class="type">Accessories</a>
+              <span class="price">$16.00</span>
+            </div>
+            <div class="add">
+              <a href=""><i class="fa fa-plus"></i></a>
+            </div>
+          </div>
+        </div><!-- end  item -->
+
+
+        <div class="upsell-list--item">
+          <div class="above">
+            <img src="./images/image2.1.jpg" alt="" class="current">
+            <img src="./images/image2.2.jpg" alt="" class="change">
+            <i class="fa fa-heart"></i>
+
+          </div>
+          <div class="info">
+            <div class="tag">
+              <a href="" class="name">pocket wactch</a>
+              <a href="" class="type">Accessories</a>
+              <span class="price">$16.00</span>
+            </div>
+            <div class="add">
+              <a href=""><i class="fa fa-plus"></i></a>
+            </div>
+          </div>
+        </div><!-- end  item -->
+
+
+        <div class="upsell-list--item">
+          <div class="above">
+            <img src="./images/image3.1.jpg" alt="" class="current">
+            <img src="./images/image3.2.jpg" alt="" class="change">
+            <i class="fa fa-heart"></i>
+
+          </div>
+          <div class="info">
+            <div class="tag">
+              <a href="" class="name">pocket wactch</a>
+              <a href="" class="type">Accessories</a>
+              <span class="price">$16.00</span>
+            </div>
+            <div class="add">
+              <a href=""><i class="fa fa-plus"></i></a>
+            </div>
+          </div>
+        </div><!-- end item -->
+
+
+        <div class="upsell-list--item">
+          <div class="above">
+            <img src="./images/image4.1.jpg" alt="" class="current">
+            <img src="./images/image4.2.jpg" alt="" class="change">
+            <i class="fa fa-heart"></i>
+
+          </div>
+          <div class="info">
+            <div class="tag">
+              <a href="" class="name">pocket wactch</a>
+              <a href="" class="type">Accessories</a>
+              <span class="price">$16.00</span>
+            </div>
+            <div class="add">
+              <a href=""><i class="fa fa-plus"></i></a>
+            </div>
+          </div>
+        </div><!-- end item -->
+    </div> <!-- end list -->
+</div>
+
+<div class="related-product container">
+    <h3 class="related-product-title">
+
+        RELATED PRODUCTS
+
+    </h3>
+    <div class="related-product-list">
+      <div class="related-product-list--item">
           <div class="above">
             <img src="./images/owl1_1.jpg" alt="" class="current">
             <img src="./images/owl1_2.jpg" alt="" class="change">
@@ -115,48 +395,10 @@
               <a href=""><i class="fa fa-plus"></i></a>
             </div>
           </div>
-        </div><!-- end shop item -->
-
-        <div class="shop-list--item">
-          <div class="above">
-            <img src="./images/owl2_1.jpg" alt="" class="current">
-            <img src="./images/owl2_2.jpg" alt="" class="change">
-            <i class="fa fa-heart"></i>
-
-          </div>
-          <div class="info">
-            <div class="tag">
-              <a href="" class="name">pocket wactch</a>
-              <a href="" class="type">Accessories</a>
-              <span class="price">$16.00</span>
-            </div>
-            <div class="add">
-              <a href=""><i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-        </div><!-- end shop item -->
+        </div><!-- end  item -->
 
 
-        <div class="shop-list--item">
-          <div class="above">
-            <img src="./images/owl3_1.jpg" alt="" class="current">
-            <img src="./images/owl3_2.jpg" alt="" class="change">
-            <i class="fa fa-heart"></i>
-
-          </div>
-          <div class="info">
-            <div class="tag">
-              <a href="" class="name">pocket wactch</a>
-              <a href="" class="type">Accessories</a>
-              <span class="price">$16.00</span>
-            </div>
-            <div class="add">
-              <a href=""><i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-        </div><!-- end shop item -->
-
-        <div class="shop-list--item">
+        <div class="related-product-list--item">
           <div class="above">
             <img src="./images/owl4_1.jpg" alt="" class="current">
             <img src="./images/owl4_2.jpg" alt="" class="change">
@@ -173,49 +415,10 @@
               <a href=""><i class="fa fa-plus"></i></a>
             </div>
           </div>
-        </div><!-- end shop item -->
-
-        <div class="shop-list--item">
-          <div class="above">
-            <img src="./images/owl4_1.jpg" alt="" class="current">
-            <img src="./images/owl4_2.jpg" alt="" class="change">
-            <i class="fa fa-heart"></i>
-
-          </div>
-          <div class="info">
-            <div class="tag">
-              <a href="" class="name">pocket wactch</a>
-              <a href="" class="type">Accessories</a>
-              <span class="price">$16.00</span>
-            </div>
-            <div class="add">
-              <a href=""><i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-        </div><!-- end shop item -->
+        </div><!-- end  item -->
 
 
-        <div class="shop-list--item">
-          <div class="above">
-            <img src="./images/owl4_1.jpg" alt="" class="current">
-            <img src="./images/owl4_2.jpg" alt="" class="change">
-            <i class="fa fa-heart"></i>
-
-          </div>
-          <div class="info">
-            <div class="tag">
-              <a href="" class="name">pocket wactch</a>
-              <a href="" class="type">Accessories</a>
-              <span class="price">$16.00</span>
-            </div>
-            <div class="add">
-              <a href=""><i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-        </div><!-- end shop item -->
-
-
-        <div class="shop-list--item">
+        <div class="related-product-list--item">
           <div class="above">
             <img src="./images/owl1_2.jpg" alt="" class="current">
             <img src="./images/owl1_1.jpg" alt="" class="change">
@@ -232,10 +435,10 @@
               <a href=""><i class="fa fa-plus"></i></a>
             </div>
           </div>
-        </div><!-- end shop item -->
+        </div><!-- end item -->
 
 
-        <div class="shop-list--item">
+        <div class="related-product-list--item">
           <div class="above">
             <img src="./images/owl3_1.jpg" alt="" class="current">
             <img src="./images/owl4_2.jpg" alt="" class="change">
@@ -252,129 +455,11 @@
               <a href=""><i class="fa fa-plus"></i></a>
             </div>
           </div>
-        </div><!-- end shop item -->
+        </div><!-- end item -->
+    </div> <!-- end list -->
 
+</div> <!-- end related-product -->
 
-        <div class="shop-list--item">
-          <div class="above">
-            <img src="./images/owl2_1.jpg" alt="" class="current">
-            <img src="./images/owl1_2.jpg" alt="" class="change">
-            <i class="fa fa-heart"></i>
-
-          </div>
-          <div class="info">
-            <div class="tag">
-              <a href="" class="name">pocket wactch</a>
-              <a href="" class="type">Accessories</a>
-              <span class="price">$16.00</span>
-            </div>
-            <div class="add">
-              <a href=""><i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-        </div><!-- end shop item -->
-
-
-        <div class="shop-list--item">
-          <div class="above">
-            <img src="./images/owl1_2.jpg" alt="" class="current">
-            <img src="./images/owl3_2.jpg" alt="" class="change">
-            <i class="fa fa-heart"></i>
-
-          </div>
-          <div class="info">
-            <div class="tag">
-              <a href="" class="name">pocket wactch</a>
-              <a href="" class="type">Accessories</a>
-              <span class="price">$16.00</span>
-            </div>
-            <div class="add">
-              <a href=""><i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-        </div><!-- end shop item -->
-
-
-        <div class="shop-list--item">
-          <div class="above">
-            <img src="./images/owl3_1.jpg" alt="" class="current">
-            <img src="./images/owl2_2.jpg" alt="" class="change">
-            <i class="fa fa-heart"></i>
-
-          </div>
-          <div class="info">
-            <div class="tag">
-              <a href="" class="name">pocket wactch</a>
-              <a href="" class="type">Accessories</a>
-              <span class="price">$16.00</span>
-            </div>
-            <div class="add">
-              <a href=""><i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-        </div><!-- end shop item -->
-
-
-        <div class="shop-list--item">
-          <div class="above">
-            <img src="./images/owl2_2.jpg" alt="" class="current">
-            <img src="./images/owl1_2.jpg" alt="" class="change">
-            <i class="fa fa-heart"></i>
-
-          </div>
-          <div class="info">
-            <div class="tag">
-              <a href="" class="name">pocket wactch</a>
-              <a href="" class="type">Accessories</a>
-              <span class="price">$16.00</span>
-            </div>
-            <div class="add">
-              <a href=""><i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-        </div><!-- end shop item -->
-
-
-        <div class="shop-list--item">
-          <div class="above">
-            <img src="./images/owl4_1.jpg" alt="" class="current">
-            <img src="./images/owl2_2.jpg" alt="" class="change">
-            <i class="fa fa-heart"></i>
-
-          </div>
-          <div class="info">
-            <div class="tag">
-              <a href="" class="name">pocket wactch</a>
-              <a href="" class="type">Accessories</a>
-              <span class="price">$16.00</span>
-            </div>
-            <div class="add">
-              <a href=""><i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-        </div><!-- end shop item -->
-
-
-        <div class="shop-list--item">
-          <div class="above">
-            <img src="./images/owl3_2.jpg" alt="" class="current">
-            <img src="./images/owl2_2.jpg" alt="" class="change">
-            <i class="fa fa-heart"></i>
-
-          </div>
-          <div class="info">
-            <div class="tag">
-              <a href="" class="name">pocket wactch</a>
-              <a href="" class="type">Accessories</a>
-              <span class="price">$16.00</span>
-            </div>
-            <div class="add">
-              <a href=""><i class="fa fa-plus"></i></a>
-            </div>
-          </div>
-        </div><!-- end shop item -->
-    </div> <!-- end shop list -->
- </div> <!-- end shop -->
 
 <div class="widget_product container">
   <div class="widget_product-col">
