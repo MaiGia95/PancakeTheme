@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./js/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="/dist/font-awesome.min.css">
+
+  <link rel="stylesheet" href="/dist/owl.carousel.min.css">
+  <link rel="stylesheet" href="/dist/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="/dist/main.css">
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/index.js"></script>
+  <!-- <script>
+    function up() {
+        document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
+        // if (document.getElementById("myNumber").value >= parseInt(max)) {
+        //     document.getElementById("myNumber").value = max;
+        // }
+    }
+    function down(min) {
+        document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
+        if (document.getElementById("myNumber").value <= parseInt(min)) {
+            document.getElementById("myNumber").value = min;
+        }
+    }
+  </script> -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,500i,700" rel="stylesheet">
+  <title>features</title>
+</head>
+<body>
+  <header>
+    <div class="promote">
+      <div class="container">
+        <div class="promote--left">
+          <span class="promote--left--span">International Site</span>
+          <span class="promote--left--span">VND</span>
+          <span class="promote--left--span">Vận chuyển tiêu chuẩn miễn phí cho đơn hàng trên 2.940.000₫</span>
+        </div>
+        <div class="promote--left">
+          <img src="images/shein.png" alt="" class="product-img">
+        </div>
+        <div class="promote-right">
+          <div class="navigation">
+            <a href="login" class="navigation--item-1 trans-04">Đăng nhập / Đăng kí</a>
+            <a class="navigation--item trans-04">Chăm sóc khách hàng</a>
+            <a href="#" class="navigation--item-icon trans-04"><i class="fa fa-search luxbar-icon trans-04"></i></a>
+            <a href="#" class="navigation--item-icon trans-04"><i class="fa fa-heart luxbar-icon trans-04"></i></a>
+            <a href="features" class="navigation--item-icon trans-04"><i class="fa fa-shopping-features luxbar-icon trans-04"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end promote -->
+    <div id="luxbar" class="luxbar-default container">
+      <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
+      <div class="luxbar-menu luxbar-menu-right">
+        <ul class="luxbar-navigation luxbar__white">
+          <li class="luxbar-item active"><a href="home" class="trans-04">Trang chủ</a></li>
+          <li class="luxbar-item"><a href="shop" class="trans-04">Thời trang Nam</a></li>
+          <li class="luxbar-item"><a href="shop" class="trans-04">Thời trang Nữ</a></li>
+          <li class="luxbar-item"><a href="shop" class="trans-04">Thời trang Trẻ em</a></li>
+          <li class="luxbar-item"><a href="shop" class="trans-04">Khuyến mại</a></li>
+          <li class="luxbar-item"><a href="shop" class="trans-04">Tìm nhiều</a></li>
+          <!-- <li class="luxbar-item features">
+            <a href="#"><i class="fa fa-search luxbar-icon trans-04"></i></a>
+            <a href="#"><i class="fa fa-shopping-features luxbar-icon trans-04"></i></a>
+            <a href="#"><i class="fa fa-heart luxbar-icon trans-04"></i></a>
+          </li> -->
+          <li class="luxbar-item luxbar-promote">
+            <div class="promote-right">
+              <div class="navigation">
+                <a class="navigation--item-1 trans-04">Help & FAQs</a>
+                <a class="navigation--item trans-04">My Account</a>
+                <a class="navigation--item trans-04">EN</a>
+                <a class="navigation--item trans-04">USD</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end luxbar -->
+  </header>
+
+<div class="features container">
+  <div class="features-header">
+    <div class="features-header-all">
+      <table class="features-product">
+        <tbody>
+          <tr>
+            <th class="features-product-info">SẢN PHẢM</th>
+            <th class="features-product-price">GIÁ BÁN</th>
+            <th class="features-product-quantily">SỐ LƯỢNG</th>
+            <th class="features-product-subtotal">TỔNG GIÁ</th>
+          </tr>
+          <tr class="features-product--item">
+              <td  class="features-product-info">
+                <div class="infomation">
+                  <div class="left">
+                    <a href=""><img src="images/item-cart-04.jpg" alt=""></a>
+                  </div>
+                  <div class="right">
+                    <span class="name" style="font-size: 15px">Fresh Strawberries</span>
+                  </div>
+
+                </div>
+              </td>
+              <td class="features-product-price" style="padding-bottom: 43px; font-size: 15px;">$ 36.00</td>
+              <td  class="features-product-quantily" style="padding-bottom: 43px">
+                <div class="features-product-quantily-all">
+                  <div class="features-product-quantily-minus trans-04" id="down" onclick=" down('0')"><i class="fa fa-minus"></i></div>
+                  <input type="text" id="myNumber" value="1" />
+                  <div class="features-product-quantily-add trans-04" id="up"  onclick="up('10')"><i class="fa fa-plus"></i></div>
+                </div>
+              </td>
+              <td  class="features-product-subtotal" style="padding-bottom: 43px; font-size: 15px;"><span>$20.00</span></td>
+          </tr>
+
+          <tr class="features-product--item">
+              <td  class="features-product-info">
+                <div class="infomation">
+                  <div class="left">
+                    <a href=""><img src="images/item-cart-05.jpg" alt=""></a>
+                  </div>
+                  <div class="right">
+                    <span class="name" style="font-size: 15px">Lightweight Jacket</span>
+                  </div>
+
+                </div>
+              </td>
+              <td class="features-product-price" style="padding-bottom: 43px; font-size: 15px;">$ 36.00</td>
+              <td  class="features-product-quantily" style="padding-bottom: 43px">
+                <div class="features-product-quantily-all">
+                  <div class="features-product-quantily-minus trans-04" id="minus" onclick=" minus('0')"><i class="fa fa-minus"></i></div>
+                  <input type="text" id="number" value="1" />
+                  <div class="features-product-quantily-add trans-04" id="add"  onclick="add('10')"><i class="fa fa-plus"></i></div>
+                </div>
+              </td>
+              <td  class="features-product-subtotal" style="padding-bottom: 43px; font-size: 15px;"><span>$20.00</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <div class="features-coupon">
+          <div class="button-group-coupon">
+            <input type="text" placeholder="Mã Giảm Giá" class="input-button" />
+            <div class="button-coupon trans-04">Áp Mã Giảm Giá</div>
+          </div>
+          <div class="button-coupon trans-04" >Cập Nhật Giỏ Hàng</div>
+        </div>
+      </div>
+    </div>
+    <div class="features-check-all">
+      <div class="features-check">
+        <div class="features-check--floatright">
+          <div class="cross-sell">
+           <h4 class="cross-sell--title">CART TOTALS</h4>
+            <div class="cross-sell--product">
+              <div class="cross-sell--item">
+                <div class="left">
+                  <span>Subtotal:</span>
+                </div>
+                <div class="right">
+                  <span>$79.65</span>
+                </div>
+              </div>
+
+              <div class="cross-sell--item-2">
+                <div class="left">
+                  <span>Shipping:</span>
+                </div>
+                <div class="right">
+                  <p>There are no shipping methods available. Please double check your address, or contact us if you need any help.</p>
+                  <span>CALCULATE SHIPPING</span>
+                  <div class="section-features">
+                    <select>
+                      <option value="UK">UK</option>
+                      <option value="USA">USA</option>
+                    </select>
+                  </div>
+                  <input type="text" placeholder="State/ country" />
+                  <input type="text" style="margin-bottom: 22px;" placeholder="Postcode/ Zip" />
+                  <div class="button-totals trans-04">UPDATE TOTALS</div>
+                </div>
+              </div> <!-- end item -->
+            </div>
+          </div> <!-- end cross-sell -->
+
+          <div class="features-total">
+            <div class="cross-sell--item-3">
+              <div class="left">
+                <span>Total:</span>
+              </div>
+              <div class="right">
+                <span>$79.65</span>
+              </div>
+            </div>
+          </div> <!-- end features-totals -->
+          <!-- <div class="features-button">
+            <button class="update">update features</button>
+            <button class="checkout">checkout</button>
+          </div> -->
+          <div class="features-shipping">
+            <button class="shipping trans-04">
+  							Proceed to Checkout
+  					</button>
+          </div>
+          </div> <!-- end col-right -->
+        </div> <!-- end features-check -->
+    </div>
+    </div> <!-- end features -->
+  </div>
+<!-- <div class="logo container">
+  <div class="logo-list owl-carousel owl-theme">
+    <a href="" class="logo-item"><img src="images/logo1.png" alt=""></a>
+    <a href="" class="logo-item"><img src="images/logo2.png" alt=""></a>
+    <a href="" class="logo-item"><img src="images/logo3.png" alt=""></a>
+    <a href="" class="logo-item"><img src="images/logo4.png" alt=""></a>
+    <a href="" class="logo-item"><img src="images/logo5.png" alt=""></a>
+    <a href="" class="logo-item"><img src="images/logo6.png" alt=""></a>
+  </div>
+</div> <!-- end logo -->
+<footer>
+  <div class="footer-menu container">
+    <div class="footer-list">
+      <div class="footer-col">
+        <h3 class="footer-brand">THÔNG TIN CÔNG TY</h3>
+        <a href="" class="footer-link trans-04">Women</a>
+        <a href="" class="footer-link trans-04">Men</a>
+        <a href="" class="footer-link trans-04">Shoes</a>
+        <a href="" class="footer-link trans-04">Watches</a>
+      </div><!-- end footer-col -->
+      <div class="footer-col">
+        <h3 class="footer-brand">TRUNG TÂM HỖ TRỢ</h3>
+        <a href="" class="footer-link trans-04">Track Order</a>
+        <a href="" class="footer-link trans-04">Returns</a>
+        <a href="" class="footer-link trans-04">Shipping</a>
+        <a href="" class="footer-link trans-04">FAQs</a>
+      </div><!-- end footer-col -->
+      <div class="footer-col">
+        <h3 class="footer-brand">LIÊN HỆ</h3>
+        <a href="" class="footer-link trans-04">Any questions? Let us know in store at 8th </a>
+        <a href="" class="footer-link">floor, 379 Hudson St, New York, NY 10018 or </a>
+        <a href="" class="footer-link">call us on (+1) 96 716 6879</a>
+        <div class="footer-link-isocial">
+          <a href="" class="footer-link-1 trans-04"><i class="fa fa-facebook"></i></a>
+          <a href="" class="footer-link-1 trans-04"><i class="fa fa-instagram"></i></a>
+          <a href="" class="footer-link-1 trans-04"><i class="fa fa-pinterest-p"></i></a>
+        </div>
+      </div><!-- end footer-col -->
+      <div class="footer-col">
+        <h3 class="footer-brand">ĐĂNG KÍ NHẬN TIN</h3>
+        <form action="">
+          <div class="row">
+            <input type="text" name="email" placeholder="email@example.com">
+            <div class="focus-input1 trans-04"></div>
+          </div>
+          <div class="button-subscribe">
+            <button class="trans-04">ĐĂNG KÍ</button>
+          </div>
+        </form>
+      </div> <!-- end footer-col -->
+    </div> <!-- end footer list -->
+  </div> <!-- end footer-menu -->
+  <div class="footer-bottom container">
+    <div class="footer-pay">
+      <a href=""><img src="./images/icon-pay-01.png" alt=""></a>
+      <a href=""><img src="./images/icon-pay-02.png" alt=""></a>
+      <a href=""><img src="./images/icon-pay-03.png" alt=""></a>
+      <a href=""><img src="./images/icon-pay-04.png" alt=""></a>
+      <a href=""><img src="./images/icon-pay-05.png" alt=""></a>
+    </div>
+    <div class="footer-bottom--menu">
+      <span>Copyright ©2018 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="">Colorlib</a></span>
+    </div>
+    <!-- <div class="footer-bottom--payment">
+      <ul>
+        <li><a href=""><img src="images/pm1.png" alt=""></a></li>
+        <li><a href=""><img src="images/pm2.png" alt=""></a></li>
+        <li><a href=""><img src="images/pm3.png" alt=""></a></li>
+        <li><a href=""><img src="images/pm4.png" alt=""></a></li>
+        <li><a href=""><img src="images/pm5.png" alt=""></a></li>
+        <li><a href=""><img src="images/pm6.png" alt=""></a></li>
+
+      </ul>
+    </div> -->
+  </div><!-- end footer-bottom -->
+</footer>
+
+  </body>
+  </html>

@@ -11,8 +11,8 @@ server.use(express.static('public'))
 server.use(bodyParser.json())
 server.use(bodyParser.urlencoded({ extended: true }))
 
-server.get("/product", (req, res) => {
-  res.sendFile(__dirname + "/public/html/product.html")
+server.get("/shop", (req, res) => {
+  res.sendFile(__dirname + "/public/html/shop.html")
 })
 server.get("/contact", (req, res) => {
   res.sendFile(__dirname + "/public/html/contact.html")
@@ -26,12 +26,21 @@ server.get("/product-category", (req, res) => {
 server.get("/blog", (req, res) => {
   res.sendFile(__dirname + "/public/html/blog.html")
 })
+
+server.get("/blog-post", (req, res) => {
+  res.sendFile(__dirname + "/public/html/blog-post.html")
+})
+
+server.get("/about", (req, res) => {
+  res.sendFile(__dirname + "/public/html/about.html")
+})
+
 server.get("/post", (req, res) => {
   res.sendFile(__dirname + "/public/html/blog-post.html")
 })
 
-server.get("/cart", (req, res) => {
-  res.sendFile(__dirname + "/public/html/cart.html")
+server.get("/features", (req, res) => {
+  res.sendFile(__dirname + "/public/html/features.html")
 })
 
 server.get("/product-detail", (req, res) => {

@@ -219,16 +219,16 @@ $(function(){
 // owl carousel product-image on product-detail page
 
 
-// coupon click on cart page
-$('.cart .coupon-form--button').click(function(event) {
+// coupon click on features page
+$('.features .coupon-form--button').click(function(event) {
     $(this).hide();
-    $('.cart .coupon-form--input').addClass('show')
+    $('.features .coupon-form--input').addClass('show')
     return false;
 });
 
-$('.cart .coupon-form--input i').click(function(event) {
-    $('.cart .coupon-form--input').removeClass('show')
-    $('.cart .coupon-form--button').show();
+$('.features .coupon-form--input i').click(function(event) {
+    $('.features .coupon-form--input').removeClass('show')
+    $('.features .coupon-form--button').show();
 });
 
 // tabs-button click on product-detail page
@@ -289,21 +289,30 @@ $('.sub').click(function () {
       });
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
+
+function up() {
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
+    // if (document.getElementById("myNumber").value >= parseInt(max)) {
+    //     document.getElementById("myNumber").value = max;
+    // }
+}
+function down(min) {
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
+    if (document.getElementById("myNumber").value <= parseInt(min)) {
+        document.getElementById("myNumber").value = min;
+    }
+}
+
+function add() {
+    document.getElementById("number").value = parseInt(document.getElementById("number").value) + 1;
+    // if (document.getElementById("number").value >= parseInt(max)) {
+    //     document.getElementById("number").value = max;
+    // }
+}
+function minus(min) {
+    document.getElementById("number").value = parseInt(document.getElementById("number").value) - 1;
+    if (document.getElementById("number").value <= parseInt(min)) {
+        document.getElementById("number").value = min;
+    }
+}
